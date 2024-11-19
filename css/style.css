@@ -1,0 +1,6 @@
+header {
+    background-color: rgb(82, 2, 139);
+}
+.headerContent .headerTitle .headerLogo {
+    width: 5rem;
+}
