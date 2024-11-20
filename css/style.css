@@ -20,8 +20,6 @@ hr {
 
 header {
     background-color: #005C7A;
-    position: sticky;
-    top: 0;
 }
 .headerLogo {
     width: 5rem;
@@ -37,8 +35,30 @@ nav .navbar-nav .active{
 
 /* --- Intro --- */
 
+@keyframes appearLeft {
+    from {
+        opacity: 0;
+        transform: translatex(-100px)
+    } 
+    to {
+        opacity: 1;
+        transform: translatex(0px)
+    }
+}
+@keyframes appearRight {
+    from {
+        opacity: 0;
+        transform: translatex(100px)
+    } 
+    to {
+        opacity: 1;
+        transform: translatex(0px)
+    }
+}
+
 .mainIntroContainer {
     background-color: #003249;
+    height: 100vh;
 }
 .mainIntro {
     padding: 2rem 0;
@@ -59,6 +79,14 @@ nav .navbar-nav .active{
     font-family: bebas;
     font-size: 3rem;
     margin: 1rem;
+    animation: appearLeft ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.sobreMimText {
+    animation: appearRight ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 /* --- Responsividade --- */
