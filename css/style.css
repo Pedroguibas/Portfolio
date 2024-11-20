@@ -19,7 +19,7 @@ hr {
 /* --- Header --- */
 
 header {
-    background-color: #52028b;
+    background-color: #007EA7;
     position: sticky;
     top: 0;
 }
@@ -27,9 +27,6 @@ header {
     width: 5rem;
     border-radius: 100%;
     margin: 0.5rem;
-}
-.headerTitle {
-    font-size: 1.5rem
 }
 nav .navbar-nav li a{
     color: #C4C4C4 !important;
@@ -42,10 +39,41 @@ nav .navbar-nav .active{
 
 .mainIntroContainer {
     min-height: 100vh;
-    background-color: #52028b;
+    background-color: #007EA7;
 }
 .mainIntroTitle {
     font-family: bebas;
-    font-size: 5rem;
-    line-height: 4rem;
+}
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 600px) {
+    .headerTitle {
+        font-size: 1rem
+    }
+    .headerLogo {
+        width: 3rem;
+    }
+    .mainIntroText {
+        font-size: 0.6rem;
+    }
+    .mainIntroTitle {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+@media screen and (min-width: 601px) {
+    .headerTitle {
+        font-size: 1.5rem
+    }
+    .headerLogo {
+        width: 5rem;
+    }
+    .mainIntroText {
+        font-size: 1rem;
+    }
+    .mainIntroTitle {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
 }
