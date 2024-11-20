@@ -106,9 +106,30 @@ main {
 .projectTitle {
     font-family: bebas;
     width: fit-content;
-    animation: appear ease;
+}
+.projDiscript {
+    width: 25rem;
+    text-align: justify;
+    animation: appearLeft ease;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+}
+.projImg {
+    width: 25rem;
+    animation: appearRight ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.downloadBtn {
+    background-color: #45B8C4;
+    border-color: #45B8C4;
+    animation: appear ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+}
+.downloadBtn:hover {
+    background-color: #31909B;
+    border-color: #31909B;
 }
 
 /* --- Responsividade --- */
@@ -129,6 +150,16 @@ main {
     }
     .mainIntroImageContainer img {
         width: 70vw;
+    }
+    .projImg {
+        width: 15rem;
+    }
+    .projDiscript {
+        font-size: 1rem;
+        width: 80vw;
+    }
+    .projIntro {
+        text-align: center;
     }
 }
 @media screen and (min-width: 601px) {

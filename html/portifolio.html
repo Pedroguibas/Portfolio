@@ -44,9 +44,9 @@
         </header>
         <main>
             <section class="mainIntroContainer p-3 container-fluid d-flex align-items-center">
-                <div class="mainIntro container d-flex flex-wrap justify-content-center align-items-center">
+                <div class="mainIntro container col-10 d-flex flex-wrap justify-content-around align-items-center">
                     <div class="mainIntroTitleContainer m-3 d-flex justify-content-center">
-                        <div class="mainIntroContent">
+                        <div class="mainIntroTitleContent">
                             <h1 class="mainIntroTitle text-align-left">Pedro<br>Bastos</h1>
                             <p class="mainIntroText">Uma página pessoal focada em expor meus projetos e trabalhos desenvolvidos ao longo da faculdade e do meu desenvolvimento.</p>    
                         </div>
@@ -66,9 +66,18 @@
             <section class="projetosContainer container-fluid" id="projetos">
                 <div class="projetos container d-flex flex-column justify-content-center">
                     <h1 class="mainTitles">Projetos</h1>
-                    <div class="projeto d-flex flex-column justify-content-center align-items-center">
+                    <div class="projeto d-flex flex-column mt-3 mb-3 justify-content-center align-items-center">
                         <h2 class="projectTitle">Calculadora</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, neque et, sit atque quibusdam quos nihil qui cum voluptate odit consequuntur dignissimos. Voluptatum molestias autem reprehenderit quia? Suscipit, reprehenderit atque.</p>
+                        <p class="projIntro m-3">Minha calculadora foi um projeto pessoal. Após a introdução ao JavaScript ainda me faltava conhecimentos que se adquirem na faser prática, por isso, resolvi iniciar este projeto.</p>
+                        <div class="projDiscriptContainer mt-3 mb-3 col-10 d-flex flex-wrap justify-content-around align-items-center">
+                            <p class="projDiscript">No começo enfrentei várias dificuldades por ser meu primeiro projeto com a linguagem, mas depois dos primeiros dias consegui evoluir e implementar as funções que queria. A página tabmém conta com temas tanto de modo claro e escuro, quanto de alteração de cor.</p>
+                            <img class="projImg" src="../img/calcImg.png" alt="Calculadora">
+                        </div>
+                        <div class="projDiscriptContainer mt-3 mb-3 col-10 d-flex flex-wrap justify-content-around align-items-center">
+                            <p class="projDiscript">Além da calculadora implementei um conversor de moedas na mesma página, que puxa os valores de conversão diários por meio de uma API gratuita e converte os valores conforme desejado.</p>
+                            <img class="projImg" src="../img/conversorImg.png" alt="Calculadora">
+                        </div>
+                        <a href="https://github.com/Pedroguibas/Calculadora/archive/refs/heads/main.zip" class="downloadBtn m-3 btn btn-primary">Donwload</a>
                     </div>                 
                 </div>
             </section>
