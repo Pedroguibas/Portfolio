@@ -19,7 +19,7 @@ hr {
 /* --- Header --- */
 
 header {
-    background-color: #007EA7;
+    background-color: #005C7A;
     position: sticky;
     top: 0;
 }
@@ -35,14 +35,30 @@ nav .navbar-nav .active{
     color: #FFF !important;
 }
 
-/* --- Main --- */
+/* --- Intro --- */
 
 .mainIntroContainer {
-    min-height: 100vh;
-    background-color: #007EA7;
+    background-color: #003249;
+}
+.mainIntro {
+    padding: 2rem 0;
 }
 .mainIntroTitle {
     font-family: bebas;
+}
+
+/* --- Sobre Mim --- */
+
+.sobreMimContainer * {
+    color: #003249;
+}
+.sobreMimContainer {
+    background-color: #CCDBDC;
+}
+.sobreMimTitle {
+    font-family: bebas;
+    font-size: 3rem;
+    margin: 1rem;
 }
 
 /* --- Responsividade --- */
@@ -55,11 +71,14 @@ nav .navbar-nav .active{
         width: 3rem;
     }
     .mainIntroText {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .mainIntroTitle {
-        font-size: 3rem;
-        line-height: 2.5rem;
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    .mainIntroImageContainer img {
+        width: 70vw;
     }
 }
 @media screen and (min-width: 601px) {
@@ -70,10 +89,14 @@ nav .navbar-nav .active{
         width: 5rem;
     }
     .mainIntroText {
+        max-width: 30rem;
         font-size: 1rem;
     }
     .mainIntroTitle {
         font-size: 6rem;
         line-height: 5rem;
+    }
+    .mainIntroImageContainer img {
+        width: 35rem;
     }
 }
