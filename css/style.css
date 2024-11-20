@@ -4,18 +4,47 @@
     font-family: bebas;
     src: url(../fonts/BebasNeue-Regular.ttf);
 }
+@keyframes appearLeft {
+    from {
+        opacity: 0;
+        transform: translatex(-100px);
+    } 
+    to {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+@keyframes appearRight {
+    from {
+        opacity: 0;
+        transform: translatex(100px);
+    } 
+    to {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    } 
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-}  
+}
 * {
-    color: #E4E4E4;
+    color: #003249;
 }
-hr {
-    color: #E4E4E4;
+header *, .mainIntro * {
+    color: #CCDBDC;
 }
-
 /* --- Header --- */
 
 header {
@@ -33,32 +62,26 @@ nav .navbar-nav .active{
     color: #FFF !important;
 }
 
-/* --- Intro --- */
+/* --- Main --- */
 
-@keyframes appearLeft {
-    from {
-        opacity: 0;
-        transform: translatex(-100px)
-    } 
-    to {
-        opacity: 1;
-        transform: translatex(0px)
-    }
+main {
+    background-color: #CCDBDC;
 }
-@keyframes appearRight {
-    from {
-        opacity: 0;
-        transform: translatex(100px)
-    } 
-    to {
-        opacity: 1;
-        transform: translatex(0px)
-    }
+.mainTitles {
+    font-family: bebas;
+    font-size: 3rem;
+    margin: 1rem;
+    animation: appearLeft ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
+
+
+/* --- Intro --- */
 
 .mainIntroContainer {
     background-color: #003249;
-    height: 100vh;
+    min-height: 100vh;
 }
 .mainIntro {
     padding: 2rem 0;
@@ -69,24 +92,23 @@ nav .navbar-nav .active{
 
 /* --- Sobre Mim --- */
 
-.sobreMimContainer * {
-    color: #003249;
-}
 .sobreMimContainer {
-    background-color: #CCDBDC;
-}
-.sobreMimTitle {
-    font-family: bebas;
-    font-size: 3rem;
-    margin: 1rem;
-    animation: appearLeft ease;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    padding: 2.5rem 0;
 }
 .sobreMimText {
     animation: appearRight ease;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
+}
+
+/* --- Projetos --- */
+
+.projectTitle {
+    font-family: bebas;
+    width: fit-content;
+    animation: appear ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 /* --- Responsividade --- */
