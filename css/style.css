@@ -146,9 +146,10 @@ footer {
     background-color: #003249;
 }
 .socialIcon {
-    width: 5.5rem;
-    height: 5.5rem;
-    border-radius: 14px;
+    width: 5.425rem;
+    height: 5.425rem;
+    border-radius: 16px;
+    border: 2px solid #9AD1D4;
     background-color: #fff;
     overflow: hidden;
     position: relative;
@@ -168,8 +169,8 @@ footer {
     background: var(--color);
     content: "";
     position: absolute;
-    width: 134%;
-    height: 134%;
+    width: 130%;
+    height: 130%;
     left: -110%;
     top: 80%;
     transform: rotate(45deg);
