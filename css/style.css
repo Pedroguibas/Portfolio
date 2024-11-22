@@ -39,12 +39,13 @@
     font-weight: 400;
     font-style: normal;
 }
-* {
-    color: #003249;
-}
-header *, .mainIntro * {
+*, .mainIntro * {
     color: #CCDBDC;
 }
+main * {
+    color: #003249;
+}
+
 /* --- Header --- */
 
 header {
@@ -57,9 +58,6 @@ header {
 }
 nav .navbar-nav li a{
     color: #C4C4C4 !important;
-}
-nav .navbar-nav .active{
-    color: #FFF !important;
 }
 
 /* --- Main --- */
@@ -81,10 +79,9 @@ main {
 
 .mainIntroContainer {
     background-color: #003249;
-    min-height: 100vh;
 }
 .mainIntro {
-    padding: 2rem 0;
+    padding: 7rem 0;
 }
 .mainIntroTitle {
     font-family: bebas;
@@ -132,6 +129,78 @@ main {
     border-color: #31909B;
 }
 
+/* --- Footer --- */
+
+@keyframes slide {
+    50% {
+        left: 10%;
+        top: -40%;
+    }
+    100% {
+        left: -15%;
+        top: -15%;
+    }
+}
+
+footer {
+    background-color: #003249;
+}
+.socialIcon {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 14px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 5px #00000023;
+}
+.socialIcon svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #9AD1D4;
+    transition: all 200ms ease;
+}
+.socialIcon:hover svg {
+    scale: 1.2;
+    fill: #f1f1f1;
+}
+.socialIcon:before {
+    background: var(--color);
+    content: "";
+    position: absolute;
+    width: 134%;
+    height: 134%;
+    left: -110%;
+    top: 80%;
+    transform: rotate(45deg);
+}
+.socialIcon:hover:before {
+    animation: slide 700ms forwards;
+}
+
+.socialIcon:has(.bi-instagram) {
+    --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+.socialIcon:has(.bi-linkedin) {
+    --color: #0077b5;
+}
+.socialIcon:has(.bi-github) {
+    --color: #333;
+}
+.socialIcon:has(.bi-envelope) {
+    --color: #d13737;
+}
+
+.footerContactsContainer svg {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: #9AD1D4;
+}
+.footerContactsContainer p {
+    color: #9AD1D4;
+    width: fit-content;
+}
+
 /* --- Responsividade --- */
 
 @media screen and (max-width: 600px) {
@@ -152,7 +221,7 @@ main {
         width: 70vw;
     }
     .projImg {
-        width: 15rem;
+        width: 14rem;
     }
     .projDiscript {
         font-size: 1rem;
