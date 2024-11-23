@@ -1,5 +1,6 @@
 /* --- Geral --- */
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @font-face {
     font-family: bebas;
     src: url(../fonts/BebasNeue-Regular.ttf);
@@ -38,6 +39,9 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+body {
+    background-color: #003249;
 }
 * {
     text-align: justify;
@@ -157,15 +161,14 @@ footer {
     position: relative;
     box-shadow: 10px 10px 5px #00000023;
 }
-.socialIcon svg {
-    width: 2rem;
-    height: 2rem;
-    fill: #9AD1D4;
+.socialIcon i {
+    font-size: 2rem;
+    color: #9AD1D4;
     transition: all 200ms ease;
 }
-.socialIcon:hover svg {
+.socialIcon:hover i {
     scale: 1.2;
-    fill: #f1f1f1;
+    color: #f1f1f1;
 }
 .socialIcon:before {
     background: var(--color);
@@ -194,10 +197,9 @@ footer {
     --color: #d13737;
 }
 
-.footerContactsContainer svg {
-    width: 1.7rem;
-    height: 1.7rem;
-    fill: #9AD1D4;
+.footerContactsContainer i {
+    font-size: 1.7rem;
+    color: #9AD1D4;
 }
 .footerContactsContainer p {
     color: #9AD1D4;
