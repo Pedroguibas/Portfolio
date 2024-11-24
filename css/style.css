@@ -88,10 +88,13 @@ main {
     background-color: #003249;
 }
 .mainIntro {
-    padding: 7rem 0;
+    padding: 5rem 0;
 }
 .mainIntroTitle {
     font-family: bebas;
+}
+.mainIntroImageContainer img {
+    width: 45rem;
 }
 
 /* --- Sobre Mim --- */
@@ -256,8 +259,5 @@ footer {
     .mainIntroTitle {
         font-size: 6rem;
         line-height: 5rem;
-    }
-    .mainIntroImageContainer img {
-        width: 35rem;
     }
 }
