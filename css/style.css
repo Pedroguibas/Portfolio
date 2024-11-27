@@ -243,9 +243,6 @@ footer {
     animation: slide 700ms forwards;
 }
 
-.socialIcon:has(.bi-instagram) {
-    --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
-}
 .socialIcon:has(.bi-linkedin) {
     --color: #0077b5;
 }
