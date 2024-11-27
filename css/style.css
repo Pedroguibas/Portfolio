@@ -76,6 +76,9 @@ nav a{
     height: 2.5rem;
     padding: 0;
 }
+#translateLinkContainerLg {
+    height: 2.5rem;
+}
 .translateLink {
     margin-right: 0.5rem;
     width: fit-content;
@@ -98,7 +101,9 @@ nav a{
 }
 @media screen and (max-width: 991px) {
     #translateLinkContainerMd {
-        display: block;
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
     #translateLinkContainerLg {
         display: none;
@@ -132,7 +137,7 @@ main {
     font-family: bebas;
 }
 .mainIntroImageContainer img {
-    width: 37rem;
+    width: 30rem;
 }
 
 /* --- Sobre Mim --- */
