@@ -52,6 +52,9 @@ body {
 main * {
     color: #003249;
 }
+a {
+    text-decoration: none;
+}
 
 /* --- Header --- */
 
@@ -63,8 +66,43 @@ header {
     border-radius: 100%;
     margin: 0.5rem;
 }
-nav .navbar-nav li a{
+nav a{
     color: #C4C4C4 !important;
+}
+#translateLinkContainerMd {
+    display: none;
+    flex: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+}
+.translateLink {
+    margin-right: 0.5rem;
+    width: fit-content;
+    float: right;
+}
+.navbar-toggler {
+    border-color: #CCDBDC;
+    padding: 0;
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.navbar-toggler i {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #CCDBDC;
+}
+@media screen and (max-width: 991px) {
+    #translateLinkContainerMd {
+        display: block;
+    }
+    #translateLinkContainerLg {
+        display: none;
+    }
 }
 
 /* --- Main --- */
@@ -94,7 +132,7 @@ main {
     font-family: bebas;
 }
 .mainIntroImageContainer img {
-    width: 45rem;
+    width: 37rem;
 }
 
 /* --- Sobre Mim --- */
@@ -226,6 +264,9 @@ footer {
     }
     .headerLogo {
         width: 3rem;
+    }
+    nav .translateLink p {
+        display: none;
     }
     .mainIntroText {
         font-size: 0.7rem;
