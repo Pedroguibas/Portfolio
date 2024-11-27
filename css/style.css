@@ -79,6 +79,10 @@ nav a{
 #translateLinkContainerLg {
     height: 2.5rem;
 }
+.translateLink:hover * {
+    color: #005C7A;
+    transition: all 200ms ease;
+}
 .translateLink {
     margin-right: 0.5rem;
     width: fit-content;
