@@ -178,6 +178,7 @@ main {
 }
 .projImg {
     width: 25rem;
+    border-radius: 1rem;
     animation: appearRight ease;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
