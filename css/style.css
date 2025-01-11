@@ -260,10 +260,11 @@ footer {
 }
 
 .footerContactsContainer i {
-    font-size: 1em;
+    font-size: .66em;
     color: #9AD1D4;
 }
 .footerContactsContainer p {
+    font-size: .66em;
     color: #9AD1D4;
     width: fit-content;
 }
