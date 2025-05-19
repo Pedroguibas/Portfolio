@@ -161,7 +161,7 @@ main {
     font-family: Bebas Neue;
 }
 .mainIntroImageContainer img {
-    width: 35rem;
+    width: 30rem;
     filter: drop-shadow(0 0 7px #ffffff);
 }
 
@@ -194,7 +194,7 @@ main {
 .tecnologias .tecnologiaItem {
     border-radius: 15%;
     border: solid 3px var(--headerBlue);
-    padding: 1em;
+    padding: .8em;
 }
 .tecnologias .tecnologiaItem i {
     font-size: 3em;
