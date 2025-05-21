@@ -56,7 +56,7 @@
 }
 body {
     background-color: var(--mainIntroBlue);
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 * {
     text-align: justify;
